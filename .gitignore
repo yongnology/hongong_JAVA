@@ -166,6 +166,7 @@ gradle-app.setting
 #yongmin add
 /.metadata/
 .metadata
+metadata/
 .metadata/
 /.settings/
 .setitngs
@@ -175,17 +176,26 @@ gradle-app.setting
 .project
 .module-info.java
 .gitignore
+*.gitignore
 .settings/
 .index
+*.index
 .snap
+*.snap
 .prefs
 .xml
+*.xml
+.xmi
+*.xmi
 *.tmp
 *.bak
 .tmp
+*.tmp
 .bak
+*.bak
 .loadpath
 .png
 .history
+*.hisotry
 .ser
 .ini
