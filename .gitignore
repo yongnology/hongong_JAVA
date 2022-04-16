@@ -165,8 +165,27 @@ gradle-app.setting
 
 #yongmin add
 /.metadata/
+.metadata
+.metadata/
 /.settings/
+.setitngs
+.settings/
 /bin/
 .classpath
 .project
-module-info.java
+.module-info.java
+.gitignore
+.settings/
+.index
+.snap
+.prefs
+.xml
+*.tmp
+*.bak
+.tmp
+.bak
+.loadpath
+.png
+.history
+.ser
+.ini
