@@ -162,3 +162,11 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/java,macos,gradle,intellij
+
+#yongmin add
+/.metadata/
+/.settings/
+/bin/
+.classpath
+.project
+module-info.java
