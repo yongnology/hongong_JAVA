@@ -2,7 +2,7 @@ package sec02.question;
 
 import java.util.Scanner;
 
-public class question_11 {
+public class Question_11 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
