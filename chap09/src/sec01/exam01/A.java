@@ -36,7 +36,7 @@ class A {
 			}
 			// 필드
 			int field1;
-			static int field2;
+			//static int field2;
 			// 로컬 클래스 내부 정적 필드 선언 불가
 			void method1() {}
 		}
