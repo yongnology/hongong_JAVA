@@ -1069,3 +1069,31 @@ close() 메소드 : 스트림을 닫는 역할을 한다.
 	 : c[off]부터 len개의 문자를 출력 스트림으로 보낸다.
 
 --------------------------------------------------
+
+14-2 보조 스트림
+- 보조 스트림
+  : 다른 스트림과 연결되어 여러 가지 편리한 기능을 제공해주는 스트림을 말한다.
+    보조 스트림은 자체적으로 입출력을 수행할 수 업기 때문에 입출력 소스와 바로 연결되는
+    InputStream, OutputStream, Reader, Writer 등에 연결해서 입출력을 수행한다.
+    보조 스트림은 문자 변환, 입출력 성능 향상, 기타 타입 입출력 등의 기능을 제공한다.
+- 문자 변환
+  : 소스 스트림이 바이트 기반 스트림 (InputStream, OutputStream, FileInputStream, FileOutputStream) 이면서
+    입출력 데이터가 문자라면 Reader와 Writer로 변환해서 사용한느 것을 고려할 수 있다.
+    그 이유는 문자 입출력은 Reader와 Writer가 편리하기 때문이다.
+    OutputSTreamWriter는 Writer로 변환하는 보조 스트림이고,
+    InputStreamReader는 Reader로 변환하는 보조 스트림이다.
+- 성능 향상
+  : 기본적으로 출력 스트림은 내부에 작은 버퍼를 가지고 있다.
+    하지만 이것만으로는 불충분하다.
+    보조 스트림 중에서 메모리 버퍼를 추가로 제공하여 프로그램의 실행 성능을 향상시키는 것들이 있다.
+    바이트 기반 스트림에서는 BufferedInputStream, BufferedOutputStream이 있고
+    문자 기반 스트림에는 BufferedReader, Buffered Writer가 있다.
+- 기본 타입 입출력
+  : DataInputStream과 DataOutPutStream 보조 스트림을 연결하면 기본 타입인
+    boolean, char, short, int , long, float, double을 입출력할 수 있다.
+- 개행 출력
+  : PrintStream/printWriter의 println() 메소드는 출력할 데이터 끝에 개행 문자인 '\n' 을 추가한다.
+    그래서 출력시 콘솔이나 파일에서 줄 바꿈이 일어난다.
+
+--------------------------------------------------
+
